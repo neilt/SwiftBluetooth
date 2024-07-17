@@ -1,7 +1,7 @@
 import Foundation
 import CoreBluetooth
 
-public class Peripheral: NSObject {
+public final class Peripheral: NSObject {
     private(set) var cbPeripheral: CBPeripheral
     private lazy var wrappedDelegate: PeripheralDelegateWrapper = .init(parent: self)
 
